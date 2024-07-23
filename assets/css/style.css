@@ -1,0 +1,14 @@
+*{padding: 0; margin: 0; font-family: Nunito Sans,sans-serif}
+:root {
+    --opacity: 1;
+    --primary: #00C0F3;
+    --secondary: #0077C0;
+    --white: #fff;
+    --black: #000;
+    --light-blue: #F8FAFD;
+    --text: #010101;
+    --heading-color: #213654;
+}
+a{
+    text-decoration: none;
+}
