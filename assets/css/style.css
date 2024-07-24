@@ -36,5 +36,12 @@ a{
     border: none;
 }
 .lcol{
+/*    border: 2px solid var(--light-blue);*/
+}
+.countdown_section{
     border: 2px solid var(--light-blue);
+    padding: 10px 60px;
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
 }
