@@ -1,14 +1,40 @@
-*{padding: 0; margin: 0; font-family: Nunito Sans,sans-serif}
+*{padding: 0; margin: 0;}
 :root {
     --opacity: 1;
-    --primary: #00C0F3;
-    --secondary: #0077C0;
+    --primary: #1A2238;
+    --secondary: #0A1941;
+    --purple: #7E0E42;
     --white: #fff;
     --black: #000;
-    --light-blue: #F8FAFD;
     --text: #010101;
     --heading-color: #213654;
+    --light-blue: #0170CF;
+}
+body{
+    font-family: "Montserrat", Sans-serif;
 }
 a{
     text-decoration: none;
+}
+.nowcalling {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 20px 0;
+}
+.primary-bttn{
+    background-color: var(--light-blue);
+    padding: 10px 60px;
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 800;
+    border-radius: 10px;
+    border: none;
+}
+.lcol{
+    border: 2px solid var(--light-blue);
 }
