@@ -26,6 +26,9 @@ a{
     color: var(--white);
     padding: 20px 0;
 }
+.rcol{
+    text-align: right;
+}
 .primary-bttn{
     background-color: var(--light-blue);
     padding: 10px 60px;
@@ -35,13 +38,59 @@ a{
     border-radius: 10px;
     border: none;
 }
-.lcol{
-/*    border: 2px solid var(--light-blue);*/
-}
 .countdown_section{
     border: 2px solid var(--light-blue);
     padding: 10px 60px;
     font-size: 30px;
     width: 50%;
     text-align: center;
+    border-radius: 10px;
+}
+.banner{
+    padding: 20px 0;
+    background-color: var(--primary);
+}
+.button-text {
+    margin: 0% 0% 0% 0%;
+    padding: 15px 15px 15px 15px;
+    background-color: transparent;
+    background-image: linear-gradient(200deg, #7F0F42 0%, #151D51 100%);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #C7C7C7;
+    border-radius: 7px 7px 7px 7px;
+}
+.top_buton{
+    margin: 0 auto;
+}
+.heading{
+    color: var(--white);
+    font-size: 41px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.3em;
+}
+.heading span{
+    color: var(--light-blue);
+}
+.subheading{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+.schedule_points li{
+    color: var(--black);
+    list-style: none;
+    font-size: 20px;
+    background-color: var(--white);
+    float: left;
+    width: 50%;
+    float: left;
+    width: 45%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.schedule_points li i {
+    color: var(--light-blue);
 }
