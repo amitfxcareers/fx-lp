@@ -47,8 +47,8 @@ a{
     border-radius: 10px;
 }
 .banner{
-    padding: 20px 0;
-    background-color: var(--primary);
+    padding: 40px 0;
+    background: var(--primary);
 }
 .button-text {
     margin: 0% 0% 0% 0%;
@@ -93,4 +93,32 @@ a{
 }
 .schedule_points li i {
     color: var(--light-blue);
+}
+.button-pra {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Poppins';
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+#countdown {
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--theme-primary);
+  padding: 5px 5px 5px 5px;
+  border-radius: 7px;
+}
+
+#countdown > div {
+  margin-right: 1rem;
+  color:#fff;
+}
+
+#countdown > div:last-child {
+  margin-right: 0;
+}
+#countdown span{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 800;
 }

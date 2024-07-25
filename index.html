@@ -12,6 +12,7 @@
 
 <body>
 
+<!-- Banner -->
 <section class="banner">
     <div class="container">
         <div class="row text-center">
@@ -61,11 +62,50 @@
                 </ul>
             </div>
         </div>
+        <div class="row mt-4">
+            <div class="col-md-6 top_buton">
+                <a href="" class="button-text text-center d-block" data-bs-toggle="modal" data-bs-target="#registerModal">
+                    <h2 class="text-white">YES I WANT TO BE THE ONE</h2>
+                    <p class="button-pra">Join Our One to One clarity call with expert trainers &amp; win bonus worth ₹10,000 for FREE!!</p>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="count_timer">
+                    <h3 class="text-white text-center mt-3">Registration Closes In</h3>
+                    <div id="countdown">
+                      <div><span id="days">00 </span> <br> Days</div>
+                      <div><span class="colon">:</span></div>
+                      <div><span id="hours">00 </span> <br>Hours</div>
+                      <div><span class="colon">:</span></div>
+                      <div><span id="minutes">00 </span> <br>Minutes</div>
+                      <div><span class="colon">:</span></div>
+                      <div><span id="seconds">00</span> <br>Seconds</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <h2 class="text-white text-center mt-4">
+                    📢 Join Now… Only A Few Seats Are Left…
+                </h2>
+            </div>
+        </div>
     </div>
 </section>
+<!-- Banner -->
 
+<!-- Second Section -->
+<section class="high-returns">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+    </div>
+</section>
+<!-- Second Section -->
 
-<section class="nowcalling">
+<!-- <section class="nowcalling">
     <div class="container">
         <div class="row align-items-center">
            <div class="col-md-6">
@@ -82,9 +122,48 @@
            </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <script>
+        // Set the countdown time to 15 hours in seconds
+var countDownTime = 15 * 60 * 60;
+
+// Get the days, hours, minutes, and seconds elements
+var daysElement = document.getElementById("days");
+var hoursElement = document.getElementById("hours");
+var minutesElement = document.getElementById("minutes");
+var secondsElement = document.getElementById("seconds");
+
+// Update the countdown display every second
+var countdownInterval = setInterval(function() {
+  // Calculate the remaining time in days, hours, minutes, and seconds
+  var days = Math.floor(countDownTime / 86400);
+  var hours = Math.floor((countDownTime % 86400) / 3600);
+  var minutes = Math.floor((countDownTime % 3600) / 60);
+  var seconds = countDownTime % 60;
+
+  // Display the remaining time in the days, hours, minutes, and seconds elements
+  daysElement.innerHTML = days.toString().padStart(2, "0");
+  hoursElement.innerHTML = hours.toString().padStart(2, "0");
+  minutesElement.innerHTML = minutes.toString().padStart(2, "0");
+  secondsElement.innerHTML = seconds.toString().padStart(2, "0");
+
+  // Decrease the remaining time by one second
+  countDownTime--;
+
+  // Check if the countdown has reached zero
+  if (countDownTime < 0) {
+    clearInterval(countdownInterval);
+    daysElement.innerHTML = "00";
+    hoursElement.innerHTML = "00";
+    minutesElement.innerHTML = "00";
+    secondsElement.innerHTML = "00";
+  }
+}, 1000);
+
+    </script>
+
+<!-- <script>
     var timeInSecs;
     var ticker;
 
@@ -114,7 +193,7 @@
     }
 
     startTimer(15 * 60); // Start the timer for 15 minutes
-</script>
+</script> -->
 </body>
 
 </html>
