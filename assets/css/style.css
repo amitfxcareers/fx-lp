@@ -64,10 +64,10 @@ a{
     margin: 0 auto;
 }
 .heading{
-    color: var(--white);
+/*    color: var(--white);*/
     font-size: 41px;
     font-weight: 700;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     line-height: 1.3em;
 }
 .heading span{
@@ -104,7 +104,7 @@ a{
 #countdown {
   display: flex;
   justify-content: center;
-  border: 2px solid var(--theme-primary);
+  border: 2px solid var(--light-blue);
   padding: 5px 5px 5px 5px;
   border-radius: 7px;
 }
@@ -121,4 +121,28 @@ a{
     font-size: 30px;
     color: #fff;
     font-weight: 800;
+}
+.high-returns{
+    padding: 40px 0;
+    background-color: var(--white);
+}
+.answer-pointers {
+    padding: 30px;
+    background-color: var(--primary);
+    color: var(--white);
+    border: 1px solid var(--light-blue);
+    border-radius: 10px;
+}
+.answer-pointers li{
+    font-size: 22px;
+    font-weight: 500;
+    list-style: none;
+    line-height: 27px;
+    background: url(../images/white-tick.png) no-repeat left 8px;
+    padding: 0 0 0px 30px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.high-returns img{
+    border-radius: 10px;
 }
